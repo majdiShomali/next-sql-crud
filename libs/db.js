@@ -7,7 +7,7 @@ const connectionOptions = {
   port: 5432,
   database: 'postgres',
   user: 'postgres',
-  password: '1234',
+  password: process.env.NEXT_PUBLIC_API_PASSWORD,
 };
 
 let dbInstance;
